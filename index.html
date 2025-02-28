@@ -33,7 +33,7 @@ var bounciness = 1; // Bounciness (1- restitution) 0 == no bounce, 1 = perfect e
 function ballLineDistance()
 {
     // Calculate the distance between ball and line
-    let dist  = 10000; // Set to some large value in the absence of a calculation
+    let dist  = Math.abs(A*bx+B*by+C)/ Math.sqrt(A*A+B*B) // Set to some large value in the absence of a calculation
     return dist;
 }
 
